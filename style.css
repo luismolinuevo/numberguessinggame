@@ -1,0 +1,47 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.sceneone {
+   display: none; 
+}
+
+.container {
+    padding: 20px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.subTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sceneone {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#resetButton {
+    display: none;
+}
+
+#winnerOutput {
+    padding: 20px;
+    font-size: 25px;
+    color: blue;
+    text-align: center;
+}

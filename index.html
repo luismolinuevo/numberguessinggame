@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js" defer></script>
+    <title>Number Guessing Game</title>
+</head>
+<body>
+    <div class = "container">
+        <div class="form">
+            <!-- <form> -->
+                <h2 class="title">2 Player Number Guessing Game</h2>
+                <div id = "namesInput">
+                    <h3 class="subTitle">Enter Names</h3>
+                    <input type="text" id="name1" placeholder="Player One Name">
+                    <input type="text" id="name2" placeholder="Player Two Name">
+                    <button id="sumbitName" onclick="getNames()">Start Game</button>
+                </div>
+                
+            <!-- </form> -->
+        </div>
+    
+        <div class ="sceneone" id="numberInputContainer">
+            <h3 class="subTitle">Guess a Number 1-10 and input below</h3>
+            <div id="inputs">
+                <input type="text" id="numberInput" placeholder="Enter Guess">
+                <input type="submit" id="sumbitNumber" onclick="findWinner(), changeTurn()">
+            </div>
+            
+            <div id = "wrong"></div>
+            <button id="resetButton">Play Again</button>
+        </div>
+    
+        <div id="number"></div>
+    
+        
+        <div id = "winnerOutput"></div>
+    </div>
+    
+</body>
+</html>
